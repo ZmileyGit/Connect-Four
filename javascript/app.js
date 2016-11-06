@@ -131,9 +131,10 @@ app.controller("gameController",["$scope","$timeout",function($scope,$timeout){
                                 if(row === position.position.row){
                                     console.log(positions);
                                     ro+=1;
-                                    if(position.player === "-"){
-                                        space = position.position.column;
-                                    }
+                                    
+                                }
+                                if(position.player === "-"){
+                                    space = position.position.column;
                                 }
                             }
 

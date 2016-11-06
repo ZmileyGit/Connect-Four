@@ -619,7 +619,7 @@ app.controller("gameController",["$scope","$timeout",function($scope,$timeout){
                         let newSteps = $scope.utilities.cloneSteps(steps);
                         newSteps[play].push(column);
                         this.hybrid(newBoard,player ? 0 : 1,newSteps,limit);
-                        if(this.results.length >= 60000){
+                        if(this.results.length >= 15000 * limit){
                             break;
                         }
                     }
